@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Aether</title>
+    <link rel="stylesheet" href="aether.css">
+</head>
+<body>
+    <header>
+        <div class="menu-button" onclick="toggleMenu()">&#9776; Menu</div>
+        <h1 class="title"></h1><img src="C:\Users\Bishal Shrestha\User Downloads\ai.png" alt="AI Aether Logo" class="ilogo"> </h1>
+       
+    </header>
+    <nav id="sidebar">
+        <img src="C:\Users\Bishal Shrestha\User Downloads\ai-aether-high-resolution-logo__1___1_-removebg-preview.png" alt="AI Aether Logo" class="logo" >
+        <ul>
+            <li><a href="C:\HTML Files\aicalc.html">AI Calculator</a></li>
+            <li><a href="https://www.youtube.com/@ai_aether_ai">AI Aether YouTube Channel</a></li>
+            <li><a href="#">Videos</a></li>
+            <li><a href="#">Social</a></li>
+            <li><a href="#">Feedback</a></li>
+            <li><a href="#">Help & Reports</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </nav>
+    <div id="content" onclick="closeMenu(event)">
+        <form action="submitaether.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="gender">Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="Male"><label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female">  <label for="female">Female</label><br>
+          
+
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <script src="aetherjs.js"></script>
+</body>
+</html>

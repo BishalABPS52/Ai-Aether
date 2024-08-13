@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: rgb(10, 8, 128);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(17, 5, 121);
+    position: relative;
+}
+
+.menu-button {
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    left: 20px;
+}
+
+.title {
+    font-family: 'Arial', serif;
+    font-size: 74px;
+    color: #ffffff; /* bluish white */
+}
+
+#sidebar {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: rgb(42, 41, 39);
+    padding-top: 60px;
+    overflow-y: auto;
+    box-sizing: border-box;
+    color: #f0f8ff; /* bluish white */
+}
+
+#sidebar .logo {
+    display: block;
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+    margin: 20px auto;
+}
+
+#sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#sidebar ul li {
+    padding: 8px 16px;
+    text-align: left;
+}
+
+#sidebar ul li a {
+    color: #f0f8ff; /* bluish white */
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#sidebar ul li a:hover {
+    color: rgb(193, 170, 42);
+}
+
+#content {
+    padding: 20px;
+}
+
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], textarea {
+    width: 60%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 3px solid rgb(17, 5, 121);
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color:rgb(17, 5, 121);
+    color: rgb(231, 231, 231);
+    padding: 14px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input [type="email"]
+{
+   width:20px;
+   size: 12px;
+   padding: 10px;
+    margin-bottom: 10px;
+    border: 3px solid rgb(17, 5, 121);
+    border-radius: 4px;
+}
+
+input [type="radio"]
+{
+    border: 3px solid rgb(17, 5, 121);
+    border-radius: 4px;
+}
+
+.menu-button
+{
+    color:rgb(255, 255, 255);
+}
+
+.ilogo {
+    position: absolute;
+    right: 10px;
+    top: 10px; /* Adjust top value as needed */
+    width: 300px; /* Adjust size as needed */
+    height: auto;
+}
